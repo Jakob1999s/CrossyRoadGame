@@ -337,7 +337,7 @@ namespace CrossyRoad
 
             foreach (BusCreator l in u.BusCreator)
             {
-                l.createBus(u.Tracks);
+                l.CreateBus(u.Tracks);
             }
             #endregion
 

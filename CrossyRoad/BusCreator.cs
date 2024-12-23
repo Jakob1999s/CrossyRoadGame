@@ -30,7 +30,7 @@ namespace CrossyRoad
         {
         }
 
-        public void createBus(Track[] tracks)
+        public void CreateBus(Track[] tracks)
         {
             switch (phase)
             {
