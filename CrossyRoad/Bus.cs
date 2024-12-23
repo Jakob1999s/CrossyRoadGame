@@ -8,8 +8,13 @@ namespace CrossyRoad
 {
     class Bus : GameFigure
     {
+
+
         public Bus(Track track)
         {
+            idTrack = track.IdTrack;
+            idTrack2 = idTrack + 1;
+
             DrawEdge(track);
 
             AssignPosition(track);

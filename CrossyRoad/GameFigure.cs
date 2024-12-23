@@ -10,6 +10,10 @@ namespace CrossyRoad
 {
     public abstract class GameFigure
     {
+        protected int idTrack;
+
+        protected int idTrack2;
+
         protected Rectangle edge;
 
         public double Scaler;
@@ -24,6 +28,11 @@ namespace CrossyRoad
 
         public abstract int Damage(Track track);
 
+        public int IdTrack
+        { get { return idTrack; } }
+
+        public int IdTrack2
+        { get { return idTrack2; } }
 
         public Image Image
         { get { return image; } }
@@ -96,7 +105,7 @@ namespace CrossyRoad
         //Aus dem bool ein int machen, sodass verschieden Figuren verschieden Schädlich sind.
         public bool Crash(Point[] points)
         {
-            if (edge.Contains(points[0]) || edge.Contains(points[1]) )
+            if (edge.Contains(points[0]) || edge.Contains(points[1]))
             {
                 return true;
             }

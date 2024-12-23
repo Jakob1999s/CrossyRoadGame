@@ -58,6 +58,8 @@ namespace CrossyRoad
         int showGameNameCounter = 0;
 
         bool gameOver = false;
+
+        GameFigure gRedFlash;
         #endregion
 
         private void FrmCrossyRoad_Load(object sender, EventArgs e)
@@ -346,6 +348,8 @@ namespace CrossyRoad
                 {
                     if (u.Tracks[i].Figures[a].Crash(u.Frog.CrashPoints))
                     {
+                        gRedFlash = u.Tracks[i].Figures[a];
+
                         if (life > 0)
                         {
                             life -= u.Tracks[i].Figures[a].Damage(u.Tracks[i]);
@@ -361,6 +365,17 @@ namespace CrossyRoad
                     }
                 }
             }
+
+            if(gRedFlash != null)
+            {
+                //rotes Leuchten unterbinden
+                if (!gRedFlash.Crash(u.Frog.CrashPoints))
+                {
+                    u.Tracks[gRedFlash.IdTrack].Red = false;
+                    u.Tracks[gRedFlash.IdTrack2].Red = false;
+                }
+            }
+
 
             foreach (Track t in u.Tracks)
             {

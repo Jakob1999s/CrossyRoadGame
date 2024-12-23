@@ -12,6 +12,9 @@ namespace CrossyRoad
     {
         public Car(Track track)
         {
+            idTrack = track.IdTrack;
+            idTrack2 = track.IdTrack;
+            
             //Width und Height wird ermittelt
             DrawEdge(track);
 
