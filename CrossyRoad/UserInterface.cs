@@ -51,39 +51,39 @@ namespace CrossyRoad
             switch (difficultyLevel)
             {
                 case 1:
-                    tracks = new Track[12];
+                    tracks = new Track[8];
                     minSpeed = 5;
                     maxSpeed = 30;
                     Probability = 5;
                     break;
                 case 2:
-                    tracks = new Track[16];
+                    tracks = new Track[12];
                     minSpeed = 5;
-                    maxSpeed = 40;
+                    maxSpeed = 35;
                     Probability = 5;
                     break;
                 case 3:
-                    tracks = new Track[20];
+                    tracks = new Track[16];
                     minSpeed = 5;
-                    maxSpeed = 60;
+                    maxSpeed = 50;
                     Probability = 8;
                     break;
                 case 4:
-                    tracks = new Track[24];
+                    tracks = new Track[20];
                     minSpeed = 5;
-                    maxSpeed = 80;
+                    maxSpeed = 65;
                     Probability = 7;
                     break;
                 case 5:
                     tracks = new Track[24];
                     minSpeed = 5;
-                    maxSpeed = 100;
+                    maxSpeed = 70;
                     Probability = 7;
                     break;
                 case 6:
                     tracks = new Track[24];
                     minSpeed = 8;
-                    maxSpeed = 100;
+                    maxSpeed = 85;
                     Probability = 7;
                     break;
                 case 7:
